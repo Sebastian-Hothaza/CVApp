@@ -1,13 +1,17 @@
 import { useState } from "react"
 
-function PerInfo({personName, setPersonName}){
+function PerInfo({personInfo, setPersonInfo}){
     const [expanded, setExpanded] = useState(false);
     
 
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        setPersonName(e.target.personName.value);
+        setPersonInfo({
+            name: e.target.personName.value,
+            email:  e.target.personEmail.value
+        });
+        
         setExpanded(false);
     }
 
@@ -21,7 +25,8 @@ function PerInfo({personName, setPersonName}){
         
         { expanded &&
             <form className="infoBoxForm" onSubmit={handleSubmit}>
-                <input type="text" name="personName" id="personName" />
+                <input defaultValue={personInfo.name} type="text" name="personName" id="personName" />
+                <input defaultValue={personInfo.email} type="text" name="personEmail" id="personEmail"  />
                 <button type="submit">Submit</button>
             </form>
         }        

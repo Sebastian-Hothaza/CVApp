@@ -7,17 +7,17 @@ import LivePreview from './components/livePreview'
 import { useState } from "react"
 
 function App() {
-  const [personName, setPersonName] = useState("");
+  const [personInfo, setPersonInfo] = useState({name: "", email: ""});
   
   return (
       <>
       <Header/>
       <div className='userInfo'>
-        <PerInfo personName={personName} setPersonName={setPersonName}/>
+        <PerInfo personInfo={personInfo} setPersonInfo={setPersonInfo}/>
         <EduInfo/>
         <ExpInfo/>
       </div>
-      <LivePreview  personName={personName}/>
+      <LivePreview  personInfo={personInfo}/>
       </>
   )
 }
