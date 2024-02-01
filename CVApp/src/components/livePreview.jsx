@@ -1,6 +1,8 @@
-function LivePreview(){
+function LivePreview({personName}){
     return(
-        <div className="livePreview">LivePreview</div>
+        <div className="livePreview">
+        {personName}
+        </div>
     )
 }
 
