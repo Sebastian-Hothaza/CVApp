@@ -3,3 +3,11 @@
   padding: 0;
   background-color: snow;
 }
+
+button{
+  border: none;
+}
+
+button:hover{
+  cursor: pointer;
+}

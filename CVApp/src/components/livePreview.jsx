@@ -1,8 +1,12 @@
-function LivePreview({personInfo}){
+function LivePreview({personInfo, educationInfo, experienceInfo}){
     return(
         <div className="livePreview">
-        {personInfo.name}
-        {personInfo.email}
+            <div>{personInfo.name}</div>
+            <div>{personInfo.email}</div>
+            <div>{personInfo.phone}</div>
+            <div>{educationInfo.school}</div>      
+            <div>{educationInfo.degree}</div> 
+            <div>{experienceInfo.company}</div>
         </div>
     )
 }
