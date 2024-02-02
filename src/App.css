@@ -7,7 +7,7 @@
   grid-column: span 2;
   background-color: skyblue;
   text-align: center;
-  font-size: 4em;
+  font-size: 3em;
   padding: .25em 0;
   margin-bottom: 1em;
   font-weight: bold;
@@ -22,7 +22,7 @@
 }
 
 .infoBox{
-  font-size: 3em;
+  font-size: 2em;
   background-color: white;
   padding: 10px 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -58,7 +58,7 @@ input{
 form button{
   text-align: center;
   margin: auto;
-  margin: 50px auto;
+  margin: 10px auto;
   padding: 10px 50px;
   background-color: rgb(16, 113, 223);
   color: white;
@@ -73,7 +73,7 @@ form button{
   margin: 1em 2em;
   padding: 10px 50px;
   background-color: white;
-  min-height: 800px;
+  min-height: 600px;
   font-size: 1.5em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
