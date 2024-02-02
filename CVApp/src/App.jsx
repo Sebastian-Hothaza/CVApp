@@ -14,7 +14,7 @@ function App() {
   
   return (
       <>
-      <div className="header">CV App</div>
+      <div className="header">CV Builder</div>
       <div className='userInfo'>
         <PerInfo personInfo={personInfo} setPersonInfo={setPersonInfo}/>
         <EduInfo educationInfo={educationInfo} setEducationInfo={setEducationInfo}/>

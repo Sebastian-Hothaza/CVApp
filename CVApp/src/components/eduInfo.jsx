@@ -8,6 +8,8 @@ function EduInfo({educationInfo, setEducationInfo}){
         setEducationInfo({
             school:   e.target.school.value,
             degree:  e.target.degree.value,
+            startD: e.target.startD.value,
+            endD: e.target.endD.value
         });
         setExpanded(false);
     }
@@ -26,7 +28,12 @@ function EduInfo({educationInfo, setEducationInfo}){
                 <input defaultValue={educationInfo.school} type="text" name="school" id="school" />
                 <label htmlFor="degree">Degree</label>
                 <input defaultValue={educationInfo.degree} type="text" name="degree" id="degree" />
+                <label htmlFor="startD">Start Date</label>
+                <input defaultValue={educationInfo.startD} type="date" name="startD" id="startD"/>
+                <label htmlFor="endD">Graduation Date</label>
+                <input defaultValue={educationInfo.endD} type="date" name="endD" id="endD"/>
                 <button type="submit">Save</button>
+
             </form>
         }        
         </div>
